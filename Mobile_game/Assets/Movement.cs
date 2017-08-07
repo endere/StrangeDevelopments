@@ -4,7 +4,10 @@ using UnityEngine;
 
  public class Movement : MonoBehaviour {
      public GameObject player;
- 
+ 	 private Vector3 starttouch;
+ 	 private Vector3 endtouch;
+ 	 private Vector3 startplayer;
+ 	 public float speed;
      // Use this for initialization
      void Start () {
          
@@ -12,20 +15,24 @@ using UnityEngine;
      
      // Update is called once per frame
      void Update () {
- 
-         if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary)
-         {
-             Vector2 touchPosition = Input.GetTouch(0).position;
-             double halfScreen = Screen.width / 2.0;
- 
-             //Check if it is left or right?
-             if(touchPosition.x < halfScreen){
-                 player.transform.Translate(Vector3.left * 5 * Time.deltaTime);
-             } else if (touchPosition.x > halfScreen) {
-                 player.transform.Translate(Vector3.right * 5 * Time.deltaTime);
-             }
- 
-         }
- 
+
+         	foreach(Touch touch in Input.touches)
+         	{
+         		if(touch.phase == TouchPhase.Began)
+         		{
+         			starttouch = touch.position;
+         			startplayer = transform.position;
+         			starttouch = Camera.main.ScreenToWorldPoint(starttouch);
+
+         		}
+         		else if(touch.phase == TouchPhase.Moved)
+         		{
+         			endtouch = touch.position;
+         			endtouch = Camera.main.ScreenToWorldPoint(endtouch);
+         			Vector3 amount = endtouch - starttouch;
+         			transform.position = Vector3.Lerp(startplayer + amount, startplayer + amount, speed/150);
+
+         		}
+         	}
+  }
      }
- }
