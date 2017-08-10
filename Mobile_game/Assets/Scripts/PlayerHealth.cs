@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 	public float playerHealth;
 	void OnCollisionEnter2D(Collision2D collision)
 	{	
-		if (collision.gameObject.tag=="Bullet")
+		if (collision.gameObject.tag=="enemy")
 		{
 			playerHealth -= 1;
 			Destroy(collision.gameObject);

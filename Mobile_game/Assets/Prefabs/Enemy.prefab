@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectileObject: {fileID: 1601951635273378, guid: 60b601b00c30bb94c85d4e5061a1659c,
     type: 2}
-  projectileTimeOut: 0.4
+  projectileTimeOut: 0.6
   startingVelocity: 150
 --- !u!212 &212427003079561616
 SpriteRenderer:

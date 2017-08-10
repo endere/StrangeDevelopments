@@ -46,12 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EnemyShootScript.cs" />
      <Compile Include="Assets\Scripts\BulletRemoval.cs" />
+     <Compile Include="Assets\Scripts\EnemyShootScript.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\SpawnEnemies.cs" />
+     <Compile Include="Assets\Scripts\attack.cs" />
      <Compile Include="Assets\Scripts\loadsceneonclick.cs" />
-     <Compile Include="Assets\SpawnEnemies.cs" />
      <Compile Include="Assets\UI\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\UI\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\UI\Scripts\ChangeColor.cs" />
