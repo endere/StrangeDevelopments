@@ -8,6 +8,7 @@ using UnityEngine;
  	 private Vector3 endtouch;
  	 private Vector3 startplayer;
  	 public float speed;
+     public attack Attack;
      // Use this for initialization
      void Start () {
          
@@ -23,7 +24,7 @@ using UnityEngine;
          			starttouch = touch.position;
          			startplayer = transform.position;
          			starttouch = Camera.main.ScreenToWorldPoint(starttouch);
-
+                    
          		}
          		else if(touch.phase == TouchPhase.Moved)
          		{
@@ -33,6 +34,10 @@ using UnityEngine;
          			transform.position = Vector3.Lerp(startplayer + amount, startplayer + amount, speed/150);
 
          		}
+                else if(touch.phase == TouchPhase.Ended)
+                {
+                    Attack.activate(this.transform.position);
+                }
          	}
   }
      }
