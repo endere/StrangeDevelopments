@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114207833287205336}
   - component: {fileID: 114870681080365262}
   - component: {fileID: 61604868082511190}
+  - component: {fileID: 114623200393014054}
   m_Layer: 8
   m_Name: Burst
   m_TagString: Untagged
@@ -80,6 +81,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1820867077468076, guid: 444d2206d63482f4d8e97769def408e0, type: 2}
+--- !u!114 &114623200393014054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1598346027997582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaa797f11ca08b4e8580da958923f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114870681080365262
 MonoBehaviour:
   m_ObjectHideFlags: 1
