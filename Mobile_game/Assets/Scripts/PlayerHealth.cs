@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 	public float playerHealth;
 	void OnCollisionEnter2D(Collision2D collision)
 	{	
-		if (collision.gameObject.name=="Bullet(Clone)")
+		if (collision.gameObject.tag=="Bullet")
 		{
 			playerHealth -= 1;
 			Destroy(collision.gameObject);

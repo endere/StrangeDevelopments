@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\SpawnEnemies.cs" />
      <Compile Include="Assets\Scripts\attack.cs" />
      <Compile Include="Assets\Scripts\enemyCollision.cs" />
+     <Compile Include="Assets\Scripts\follow.cs" />
      <Compile Include="Assets\Scripts\loadsceneonclick.cs" />
      <Compile Include="Assets\UI\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\UI\Scripts\ApplicationManager.cs" />

@@ -20,11 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4664902690624716}
   - component: {fileID: 212581560645973716}
-  - component: {fileID: 50833022692770250}
   - component: {fileID: 114624158905761208}
   - component: {fileID: 61352771022201270}
   - component: {fileID: 114320606312742960}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,26 +43,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50833022692770250
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1739862984715698}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &61352771022201270
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -115,6 +94,7 @@ MonoBehaviour:
   player: {fileID: 1739862984715698}
   speed: 200
   Attack: {fileID: 114207833287205336, guid: df475585264c9664489d92e9cb0c1112, type: 2}
+  cooldown: 0
 --- !u!212 &212581560645973716
 SpriteRenderer:
   m_ObjectHideFlags: 1
