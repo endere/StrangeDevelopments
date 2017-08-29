@@ -59,7 +59,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
 --- !u!61 &61604868082511190
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -83,7 +83,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &114207833287205336
 MonoBehaviour:
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52074c2556b056f4f9669d294b7ba819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1820867077468076, guid: 444d2206d63482f4d8e97769def408e0, type: 2}
+  player: {fileID: 1739862984715698, guid: 444d2206d63482f4d8e97769def408e0, type: 2}
 --- !u!114 &114623200393014054
 MonoBehaviour:
   m_ObjectHideFlags: 1
