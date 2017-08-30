@@ -9,6 +9,8 @@ using UnityEngine;
  	 private Vector3 startplayer;
  	 public float speed;
      public attack Attack;
+     public float cooldown;
+     private float timeCounter;
      // Use this for initialization
      void Start () {
          
@@ -17,6 +19,7 @@ using UnityEngine;
      // Update is called once per frame
      void Update () {
 
+            timeCounter -= Time.deltaTime;
          	foreach(Touch touch in Input.touches)
          	{
          		if(touch.phase == TouchPhase.Began)
@@ -36,7 +39,11 @@ using UnityEngine;
          		}
                 else if(touch.phase == TouchPhase.Ended)
                 {
-                    Attack.activate(this.transform.position);
+                    if(timeCounter <= 0)
+                    {
+                        Attack.activate(this.transform.position);
+                        timeCounter = cooldown;
+                    }
                 }
          	}
   }

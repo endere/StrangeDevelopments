@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnEnemies : MonoBehaviour {
 	public GameObject enemy;
+	public GameObject[] enemies;
 	public float delay;
 	private float minx = -3f;
 	private float maxx = 3f;
@@ -21,6 +22,6 @@ public class SpawnEnemies : MonoBehaviour {
 	void Spawn () {
 		newx = Random.Range(minx, maxx);
 		newy = Random.Range(miny, maxy);
-		Instantiate(enemy, new Vector3(newx, newy, 0), Quaternion.identity);
+		Instantiate(enemies[UnityEngine.Random.Range(0, enemies.Length)], new Vector3(newx, newy, 0), Quaternion.identity);
 	}
 }

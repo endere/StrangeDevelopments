@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4618004569663012}
   - component: {fileID: 212427003079561616}
-  - component: {fileID: 50436517746886154}
   - component: {fileID: 114779773535370412}
   - component: {fileID: 61655986016288876}
+  - component: {fileID: 50220166527695908}
   m_Layer: 9
-  m_Name: Enemy
+  m_Name: Circle shot
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50436517746886154
+--- !u!50 &50220166527695908
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1

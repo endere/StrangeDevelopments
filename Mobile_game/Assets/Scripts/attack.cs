@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class attack : MonoBehaviour {
-	public GameObject player;
+	public GameObject player; 
 	// Use this for initialization
 
 
@@ -25,6 +25,7 @@ public class attack : MonoBehaviour {
 	}
 
 	void burstAttack (Vector3 pos) {
-		Instantiate(this.gameObject, pos, Quaternion.identity);
+		GameObject shot = Instantiate(this.gameObject, pos, Quaternion.identity);
+		Debug.Log(shot.GetComponent<CircleCollider2D>().bounds);
 	}
 }
